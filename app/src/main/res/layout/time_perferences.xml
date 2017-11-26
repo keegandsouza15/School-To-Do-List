@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/notifciation_text"
+
+                android:text="Notifications on"
+                style="@style/itemText.Large"/>
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/notifciation_summary"
+                android:layout_below="@id/notifciation_text"
+                android:text="The current time our notification is set to is: "
+                style="@style/itemText.Small" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/preference_check_box"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TimePicker
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/time_picker_preference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </TimePicker>
+</RelativeLayout>

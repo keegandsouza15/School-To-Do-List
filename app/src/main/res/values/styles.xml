@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="actionBarStyle">@style/ActionBarTheme</item>
+    </style>
+
+    <!--Style for the action bar-->
+    <style name="ActionBarTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/colorPrimaryDark</item>
+        <item name="titleTextStyle">@style/textStyle</item>
+    </style>
+
+   <!-- Style for the text for the action bar-->
+    <style name="textStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+
+    <!--Generic Style for items in a Recycler View-->
+    <style name="itemStyle">
+        <item name="android:background">@drawable/assignment_item_back_ground</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+    </style>
+
+    <!--Style for text displayed in an Adapter Item-->
+    <style name="itemText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Style for large items-->
+    <style name="itemText.Large" parent="itemText">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!--Style for small items-->
+    <style name="itemText.Small" parent="itemText">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--Style for small text buttons-->
+    <style name="small_buttonsStyleText." parent="itemText.Small">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/assignment_item_back_ground</item>
+    </style>
+
+
+    <!--Style for the small edit, enter, and delete Buttons-->
+    <style name="small_buttonsStyle" parent="itemStyle">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/small_circular_button</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+
+    <!--Styles for displaying fabs on the Main Activity Page-->
+    <style name="ItemDisplayFabElements">
+        <item name="android:background">@color/colorSecondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+
+   <!-- Styles for displaying the edit fabs on the Main Activity Page-->
+    <style name="ItemDisplayMiniFabElements" parent="ItemDisplayFabElements" >
+        <item name="android:visibility">invisible</item>
+        <item name="android:src">@drawable/ic_edit</item>
+        <item name="android:layout_margin">24dp</item>
+    </style>
+
+   <!-- Styles for displaying text view corresponding to the fabs on the Main Acitvity Page-->
+    <style name="ItemDisplayMiniFabElementsCorrespondingTextView." parent="ItemDisplayFabElements">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_margin">24dp</item>
+        <item name="android:background">@drawable/small_shape_text_box</item>
+    </style>
+</resources>

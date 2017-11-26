@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorSecondaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/assignment_item_back_ground"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp">
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/text_view_assignment_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Placeholder text"
+                android:layout_margin="2dp"
+                />
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:layout_margin="2dp"
+                android:id="@+id/text_view_assignment_item_course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Placeholder text"
+                android:layout_below="@+id/text_view_assignment_item" />
+        <SeekBar
+            android:textColor="@color/black"
+
+            android:id="@+id/seek_bar_assignment_item"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/text_view_assignment_item_course_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/text_view_assignment_item_time_to_completion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="1:30"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/text_view_assignment_item_time_to_completion"
+            android:id="@+id/button_due_today"
+            android:backgroundTint="@color/colorSecondaryLight"
+            android:src="@drawable/ic_alert"
+            style="@style/small_buttonsStyle" />
+
+
+    </RelativeLayout>
+</FrameLayout>

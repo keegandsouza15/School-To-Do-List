@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/assignment_item_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/itemStyle">
+
+    <TextView
+        android:id="@+id/assignment_item_edit_Name"
+        android:text="PlaceHoolder"
+        style="@style/itemText.Large"/>
+
+    <TextView
+        android:id="@+id/assignment_item_edit_CourseName"
+        android:text="Insturctor"
+        android:layout_below="@+id/assignment_item_edit_Name"
+        style="@style/itemText.Small"/>
+
+    <Button
+        android:id="@+id/assignment_item_edit_reinstate_button"
+        android:text="reinstate"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/assignment_item_edit_edit_button"
+        android:layout_toStartOf="@+id/assignment_item_edit_edit_button"
+        style="@style/small_buttonsStyleText."/>
+
+    <ImageView
+        android:id="@+id/assignment_item_edit_delete_button"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentRight="true"
+        style="@style/small_buttonsStyle"/>
+    <ImageView
+        android:id="@+id/assignment_item_edit_edit_button"
+        android:src="@drawable/ic_edit"
+        android:layout_toLeftOf="@id/assignment_item_edit_delete_button"
+        style="@style/small_buttonsStyle"/>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondaryDark"
+    tools:context="com.example.keegan.schooltodolist.EnterAssignmentActivity">
+
+    <EditText
+        android:id="@+id/edit_text_assignment_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Assignment Name"
+        style="@style/itemStyle"/>
+
+    <Button
+        android:id="@+id/button_choose_due_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the Due Date"
+        style="@style/itemStyle"/>
+
+    <Button
+        android:id="@+id/button_choose_estimated_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the estimated time to finish this assignment"
+        style="@style/itemStyle"/>
+
+
+    <Button
+        android:id="@+id/button_choose_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Course"
+        style="@style/itemStyle"/>
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Would you like to split this assignment into seperate parts?"/>
+
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="Yes"
+        android:textOff="No"/>
+-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/button_assignment_enter"
+            style="@style/itemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_margin="6dp"
+            android:text="Enter"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/itemStyle">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative_layout_course_edit_display">
+
+            <TextView
+                android:id="@+id/text_view_edit_course_item_Name"
+                android:text="Place_Holder_Text"
+                style="@style/itemText.Large"/>
+
+            <TextView
+                android:id="@+id/text_view_edit_course_item_Instructor"
+                android:text="Instructor"
+                android:layout_below="@id/text_view_edit_course_item_Name"
+                style="@style/itemText.Small"/>
+
+            <ImageView
+                android:id="@+id/image_view_delete_button_course_edit"
+                android:src="@drawable/ic_delete"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                style="@style/small_buttonsStyle"/>
+
+            <ImageView
+                android:id="@+id/image_view_edit_button_course_edit"
+                android:src="@drawable/ic_edit"
+                android:layout_toLeftOf="@+id/image_view_delete_button_course_edit"
+                style="@style/small_buttonsStyle">
+            </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_layout_course_edit_enter_text"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/edit_text_edit_course_item_Name"
+            android:layout_margin="0dp"
+            android:padding="5dp"
+            android:hint="Enter a new course name"
+            style="@style/itemText.Large"/>
+
+        <EditText
+            android:id="@+id/edit_text_edit_course_item_Instructor"
+            android:layout_margin="0dp"
+            android:padding="5dp"
+            android:hint="Enter a new instructor name"
+            android:layout_below="@id/edit_text_edit_course_item_Name"
+            style="@style/itemText.Small"/>
+
+        <ImageView
+            android:id="@+id/image_view_enter_button_course_edit"
+            android:src="@drawable/ic_checkmark"
+            android:layout_alignParentRight="true"
+            style="@style/small_buttonsStyle">
+        </ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
